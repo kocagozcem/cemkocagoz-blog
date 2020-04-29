@@ -1,4 +1,38 @@
+@import '../../styles/colors.scss';
+
 .container{
   display: flex;
   flex: 1;
+  flex-direction: column;
+  justify-content: center;
+};
+
+.logoContainer{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.logo{
+  font-size: 2em;
+  font-weight: bold;
+  color: $whitesmoke;
+}
+
+.ul{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuItem{
+  display: flex;
+  color: $sand;
+  font-weight: 600;
+  margin: 0 2em;
+  cursor: pointer;
+  &:hover{
+    text-decoration: underline;
+  }
 }
