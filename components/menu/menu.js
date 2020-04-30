@@ -8,8 +8,8 @@ function NavigationMenu({ children }) {
     <div className={styles.container}>
       <div className={styles.logoContainer}>
         <div className={styles.logo}>
-          <h2 className={styles.logoName}>Cem</h2>
-          <h2 className={styles.logoSurname}> Kocagöz</h2>
+          <h1 className={styles.logoName}>Cem</h1>
+          <h1 className={styles.logoSurname}> Kocagöz</h1>
         </div>
       </div>
       <nav>
