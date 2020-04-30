@@ -1,4 +1,62 @@
+@import '../../styles/colors.scss';
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+$logoSizeMultiplier: 2rem;
+
 .container{
   display: flex;
   flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 1.3rem;
+};
+
+.logoContainer{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .logo{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Staatliches', cursive;
+    cursor: default;
+    .logoName{
+      display: flex;
+      flex-direction: column;
+      float: left;
+      margin: 0;
+      line-height: 1em;
+      font-size: $logoSizeMultiplier * 2.15;
+      font-weight: bold;
+      color: $whitesmoke;
+    }
+    .logoSurname{
+      display: flex;
+      margin: 0;
+      line-height: 1em;
+      font-size: $logoSizeMultiplier;
+      font-weight: bold;
+      color: $whitesmoke;
+    }
+  }
+}
+
+.ul{
+  display: flex;
+  flex: 1;
+  padding: 0;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menuItem{
+  display: flex;
+  color: $whitesmoke;
+  font-weight: 600;
+  cursor: pointer;
+  &:hover{
+    text-decoration: underline;
+  }
 }

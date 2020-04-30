@@ -5,7 +5,9 @@ function Layout({ children }) {
   return (
     <div className={styles.container}>
       <NavigationMenu />
-      {children}
+      <div className={styles.content}>
+        {children}
+      </div>
     </div>
   )
 }
