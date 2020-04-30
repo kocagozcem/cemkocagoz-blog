@@ -1,13 +1,14 @@
 @import '../../styles/colors.scss';
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
+$logoSizeMultiplier: 2rem;
 
 .container{
   display: flex;
   flex: 1;
   flex-direction: column;
   justify-content: center;
-  padding-top: 1.3em;
+  padding-top: 1.3rem;
 };
 
 .logoContainer{
@@ -23,10 +24,11 @@
     cursor: default;
     .logoName{
       display: flex;
+      flex-direction: column;
       float: left;
       margin: 0;
       line-height: 1em;
-      font-size: 4.3em;
+      font-size: $logoSizeMultiplier * 2.15;
       font-weight: bold;
       color: $whitesmoke;
     }
@@ -34,7 +36,7 @@
       display: flex;
       margin: 0;
       line-height: 1em;
-      font-size: 2em;
+      font-size: $logoSizeMultiplier;
       font-weight: bold;
       color: $whitesmoke;
     }
@@ -45,19 +47,16 @@
   display: flex;
   flex: 1;
   padding: 0;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
 .menuItem{
   display: flex;
-  color: $sand;
+  color: $whitesmoke;
   font-weight: 600;
   cursor: pointer;
   &:hover{
     text-decoration: underline;
-  }
-  &:nth-child(2){
-    margin: 0 5em;
   }
 }
