@@ -24,7 +24,7 @@ export default function Home() {
 
       <main>
         <Layout>
-          <AboutMe />
+          <AboutMe/>
         </Layout>
       </main>
 
