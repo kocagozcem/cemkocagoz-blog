@@ -12,6 +12,7 @@ export default function Home() {
       <Head>
         <title>Cem Kocagöz | Anasayfa</title>
         <link rel="icon" href="/favicon.ico" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146867983-1"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `window.dataLayer = window.dataLayer || [];
