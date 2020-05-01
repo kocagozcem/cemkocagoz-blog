@@ -43,7 +43,7 @@ function Github({ children }) {
   function githubAttribute(header, value, url){
     return(
         <div className={styles.col}>
-          <a alt="github"className={styles.link} href={url} target="_blank">
+          <a rel="noopener" alt={"github" + header} className={styles.link} href={url} target="_blank">
             <span className={styles.githubAttributeHeader}>{header}</span>
             <span className={styles.githubAttribute}>{value}</span>
           </a>
@@ -64,7 +64,7 @@ function Github({ children }) {
           <div className={styles.githubContext}>
             <div className={styles.githubNameContainer}>
               <span className={styles.githubName}>
-                <a className={styles.link} href={user.html_url} target="_blank">
+                <a rel="noopener" alt="github profile" className={styles.link} href={user.html_url} target="_blank">
                   {user.login}
                 </a>
               </span>
