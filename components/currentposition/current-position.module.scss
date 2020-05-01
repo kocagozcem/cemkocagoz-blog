@@ -1,0 +1,74 @@
+@import '../../styles/colors.scss';
+
+.container{
+  display: flex;
+  flex: 1;
+  padding: 1rem;
+  flex-direction: column;
+}
+
+.content{
+  display: flex;
+  flex: 1;
+}
+
+.currentJobHeader{
+  text-align: center;
+  color: $sand;
+  margin-bottom: 0;
+}
+
+.job{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: $whitesmoke;
+  .company{
+    margin: 0;
+    line-height: 1rem;
+  }
+  .jobTitle{
+    margin: 1rem 0 .3rem 0;
+    line-height: 1rem;
+  }
+  .jobDate{
+    margin: 0;
+    line-height: 1rem;
+  }
+}
+
+.companyTechnologies{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  .technologiesHeader{
+    color: $whitesmoke;
+    text-align: center;
+  }
+}
+
+.technologies{
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.technology{
+  display: flex;
+  flex: 1 0 26%; /* explanation below */
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  min-width: 5rem;
+  color: $whitesmoke;
+}
+
+.technologyIcon{
+  font-size: 2em;
+}
+
+.technologyName{
+  margin-top: 0;
+}
