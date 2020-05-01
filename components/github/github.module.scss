@@ -4,6 +4,7 @@
   display: flex;
   flex: 1;
   flex-direction: column;
+  padding: 2rem 0;
   
   .githubHeader{
     text-align: center;
@@ -26,10 +27,15 @@
       color: $whitesmoke;
       min-width: 15em;
       .githubNameContainer{
-  
+        display: flex;
+        flex: 1;
+        font-size: 1.5rem;
+        justify-content: center;
+        align-items: center;
         .githubName{
           text-align: center;
           cursor: pointer;
+          font-weight: bold;
         }
       }
       .row{
@@ -41,14 +47,20 @@
           flex-direction: column;
           align-items: space-around;
           justify-content: center;
-          // margin: 0 .5rem;
           cursor: pointer;
+          &:nth-child(2){
+            margin: 0 1rem;
+          }
           .githubAttributeHeader{
             text-align: center;
             margin: .5rem 0 0 0;
+            font-weight: bold;
+            font-size: 1.2em;
           }
           .githubAttribute{
             text-align: center;
+            font-weight: bold;
+            font-size: 1.2em;
           }
         }
       }
@@ -70,6 +82,8 @@
 
 
 .link{
+  display: flex;
+  flex-direction: column;
   color: $whitesmoke;
   &:hover{
     text-decoration: none;

@@ -3,7 +3,7 @@
 .container{
   display: flex;
   flex: 1;
-  padding: 1rem;
+  padding: 1rem 0;
   flex-direction: column;
 }
 
@@ -11,6 +11,7 @@
   display: flex;
   flex: 1;
   flex-wrap: wrap;
+  padding: 1em 0;
 }
 
 .currentJobHeader{
@@ -30,10 +31,14 @@
     margin: 0;
     line-height: 1rem;
     cursor: pointer;
+    font-weight: bold;
+    font-size: 1.4rem;
   }
   .jobTitle{
     margin: 1rem 0 .3rem 0;
     line-height: 1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
   }
   .jobDate{
     margin: 0;
@@ -47,8 +52,10 @@
   flex-direction: column;
   min-width: 12.5em;
   .technologiesHeader{
+    font-weight: 600;
     color: $whitesmoke;
     text-align: center;
+    font-size: 1.2rem;
   }
 }
 
@@ -56,6 +63,7 @@
   display: flex;
   flex: 1;
   flex-wrap: wrap;
+  padding: 1em 0;
 }
 
 .technology{
@@ -74,4 +82,5 @@
 
 .technologyName{
   margin-top: 0;
+  font-weight: bold;
 }

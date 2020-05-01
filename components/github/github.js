@@ -5,7 +5,7 @@ var classNames = require('classnames');
 
 var githubAttributes = [
   {
-    title: "Public Repos",
+    title: "Repos",
     type: "public_repos",
     url: "repositories"
   },
@@ -44,8 +44,8 @@ function Github({ children }) {
     return(
         <div className={styles.col}>
           <a className={styles.link} href={url} target="_blank">
-            <h4 className={styles.githubAttributeHeader}>{header}</h4>
-            <h3 className={styles.githubAttribute}>{value}</h3>
+            <span className={styles.githubAttributeHeader}>{header}</span>
+            <span className={styles.githubAttribute}>{value}</span>
           </a>
         </div>
     )
@@ -63,11 +63,11 @@ function Github({ children }) {
           </div>
           <div className={styles.githubContext}>
             <div className={styles.githubNameContainer}>
-              <h2 className={styles.githubName}>
+              <span className={styles.githubName}>
                 <a className={styles.link} href={user.html_url} target="_blank">
                   {user.login}
                 </a>
-              </h2>
+              </span>
             </div>
             <div className={styles.row}>
               {githubAttributes.map(attribute =>

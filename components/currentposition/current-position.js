@@ -37,7 +37,7 @@ function technology(icon, title){
       <span className={styles.technologyIcon}>
         <i className={icon}></i>
       </span>
-      <h5 className={styles.technologyName}>{title}</h5>
+      <span className={styles.technologyName}>{title}</span>
     </div>
   )
 }
@@ -45,9 +45,9 @@ function technology(icon, title){
 function jobInformations(){
   return(
     <div className={styles.job}>
-      <h3 className={styles.company}>Eight Information Tech.</h3>
-      <h4 className={styles.jobTitle}>Frontend Developer (Remote)</h4>
-      <h5 className={styles.jobDate}>Aralık 2018 - Şu Anda</h5>
+      <span className={styles.company}>Eight Information Tech.</span>
+      <span className={styles.jobTitle}>Frontend Developer (Remote)</span>
+      <span className={styles.jobDate}>Aralık 2018 - Şu Anda</span>
     </div>
   )
 }
@@ -66,9 +66,9 @@ function CurrentPosition({ children }) {
       <div className={styles.content}>
         {jobInformations()}
         <div className={styles.companyTechnologies}>
-          <h4 className={styles.technologiesHeader}>
+          <span className={styles.technologiesHeader}>
             Using Technologies
-          </h4>
+          </span>
           <div className={styles.technologies}>
             {technologies.map(tech => technology(tech.icon, tech.title))}
           </div>
