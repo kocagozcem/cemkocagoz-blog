@@ -43,7 +43,7 @@ function Github({ children }) {
   function githubAttribute(header, value, url){
     return(
         <div className={styles.col}>
-          <a className={styles.link} href={url} target="_blank">
+          <a alt="github"className={styles.link} href={url} target="_blank">
             <span className={styles.githubAttributeHeader}>{header}</span>
             <span className={styles.githubAttribute}>{value}</span>
           </a>
