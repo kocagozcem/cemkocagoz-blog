@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Layout from '../components/layout/layout'
 import AboutMe from '../components/aboutme/aboutme';
 import { useEffect } from 'react';
+import CurrentPosition from '../components/currentposition/current-position';
 
 export default function Home() {
 
@@ -26,6 +27,7 @@ export default function Home() {
       <main>
         <Layout>
           <AboutMe/>
+          <CurrentPosition/>
         </Layout>
       </main>
 
