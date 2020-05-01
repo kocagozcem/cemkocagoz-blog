@@ -4,6 +4,7 @@ import Layout from '../components/layout/layout'
 import AboutMe from '../components/aboutme/aboutme';
 import { useEffect } from 'react';
 import CurrentPosition from '../components/currentposition/current-position';
+import Github from '../components/github/github';
 
 export default function Home() {
 
@@ -28,6 +29,7 @@ export default function Home() {
         <Layout>
           <AboutMe/>
           <CurrentPosition/>
+          <Github/>
         </Layout>
       </main>
 
