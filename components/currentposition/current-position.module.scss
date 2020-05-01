@@ -10,12 +10,12 @@
 .content{
   display: flex;
   flex: 1;
+  flex-wrap: wrap;
 }
 
 .currentJobHeader{
   text-align: center;
   color: $sand;
-  margin-bottom: 0;
 }
 
 .job{
@@ -25,9 +25,11 @@
   align-items: center;
   justify-content: center;
   color: $whitesmoke;
+  min-width: 12.5em;
   .company{
     margin: 0;
     line-height: 1rem;
+    cursor: pointer;
   }
   .jobTitle{
     margin: 1rem 0 .3rem 0;
@@ -43,6 +45,7 @@
   display: flex;
   flex: 1;
   flex-direction: column;
+  min-width: 12.5em;
   .technologiesHeader{
     color: $whitesmoke;
     text-align: center;

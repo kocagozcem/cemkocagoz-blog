@@ -46,7 +46,7 @@ function jobInformations(){
   return(
     <div className={styles.job}>
       <h3 className={styles.company}>Eight Information Tech.</h3>
-      <h4 className={styles.jobTitle}>Frontend Developer</h4>
+      <h4 className={styles.jobTitle}>Frontend Developer (Remote)</h4>
       <h5 className={styles.jobDate}>Aralık 2018 - Şu Anda</h5>
     </div>
   )
