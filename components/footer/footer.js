@@ -22,7 +22,7 @@ function Footer({ children }) {
 
   function socialLink(social, index){
     return(
-      <a key={index} rel="noopener" alt={social.name +" profile"} className={styles.link} href={social.link} target="_blank">
+      <a key={index} rel="noopener" alt={social.name +" profile"} title={social.name +" profile"} name={social.name +" profile"} className={styles.link} href={social.link} target="_blank">
         <span className={styles.icon}>
           <i className={social.icon} />
         </span>
