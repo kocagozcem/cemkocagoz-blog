@@ -18,6 +18,7 @@ export default function Home() {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
           rel="stylesheet"
         />
+        <link href="https://unpkg.com/pattern.css" rel="stylesheet"></link>
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146867983-1"></script>
         <script
           dangerouslySetInnerHTML={{
