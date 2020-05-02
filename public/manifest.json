@@ -1,0 +1,11 @@
+{
+  "name": "Cem Kocagöz Blog",
+  "short_name": "Cem Kocagöz Blog",
+  "theme_color": "#c1a57b",
+  "background_color": "#222831",
+  "display": "fullscreen",
+  "Scope": "/",
+  "start_url": "/",
+  "icons": null,
+  "splash_pages": null
+}
