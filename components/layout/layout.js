@@ -1,5 +1,6 @@
 import styles from './layout.module.scss';
 import NavigationMenu from '../menu/menu';
+import Footer from '../footer/footer';
 
 function Layout({ children }) {
   return (
@@ -8,6 +9,7 @@ function Layout({ children }) {
       <div className={styles.content}>
         {children}
       </div>
+      <Footer/>
     </div>
   )
 }
