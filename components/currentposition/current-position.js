@@ -1,9 +1,6 @@
 import styles from './current-position.module.scss';
 import Head from 'next/head';
 
-var classNames = require('classnames');
-// https://github.com/JedWatson/classnames
-
 let technologies = [
   {
     title: "HTML",
@@ -19,7 +16,7 @@ let technologies = [
   },
   {
     title: "Javascript",
-    icon: "fab fa-js",
+    icon: "fab fa-js-square",
   },
   {
     title: "React Native",
@@ -55,12 +52,6 @@ function jobInformations(){
 function CurrentPosition({ children }) {
   return (
     <>
-    <Head>
-      <link
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-          rel="stylesheet"
-        />
-    </Head>
     <div className={styles.container}>
       <h3 className={styles.currentJobHeader}>Current Position</h3>
       <div className={styles.content}>
