@@ -13,7 +13,6 @@ export default function Home() {
     <div className="container">
       <Head>
         <title>Cem Kocagöz | Anasayfa</title>
-        <link rel="icon" href="/favicon.ico" />
         <link
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
           rel="stylesheet"
@@ -29,6 +28,11 @@ export default function Home() {
             gtag('set', {'user_id': 'USER_ID'});`,
           }}
         />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `document.getElementsByTagName("html")[0].setAttribute("lang", "en")`
+          }}
+          />
         <meta 
           name="description"
           content={aboutme}
