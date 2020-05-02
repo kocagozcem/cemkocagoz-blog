@@ -28,9 +28,9 @@ let technologies = [
   },
 ];
 
-function technology(icon, title){
+function technology(icon, title, index){
   return(
-    <div className={styles.technology}>
+    <div className={styles.technology} key={index}>
       <span className={styles.technologyIcon}>
         <i className={icon}></i>
       </span>
@@ -61,7 +61,7 @@ function CurrentPosition({ children }) {
             Using Technologies
           </span>
           <div className={styles.technologies}>
-            {technologies.map(tech => technology(tech.icon, tech.title))}
+            {technologies.map((tech, index) => technology(tech.icon, tech.title, index))}
           </div>
         </div>
       </div>

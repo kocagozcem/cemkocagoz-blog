@@ -40,9 +40,9 @@ function Github({ children }) {
     return user;
   }
 
-  function githubAttribute(header, value, url){
+  function githubAttribute(header, value, url, index){
     return(
-        <div className={styles.col}>
+        <div className={styles.col} key={index}>
           <a rel="noopener" alt={"github" + header} className={styles.link} href={url} target="_blank">
             <span className={styles.githubAttributeHeader}>{header}</span>
             <span className={styles.githubAttribute}>{value}</span>
@@ -70,8 +70,8 @@ function Github({ children }) {
               </span>
             </div>
             <div className={styles.row}>
-              {githubAttributes.map(attribute =>
-                githubAttribute(attribute.title, user[attribute.type], user.html_url + "?tab=" + attribute.url)
+              {githubAttributes.map((attribute, index) =>
+                githubAttribute(attribute.title, user[attribute.type], user.html_url + "?tab=" + attribute.url, index)
               )}
             </div>
           </div>
