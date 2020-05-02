@@ -10,7 +10,6 @@ export default function Blog(){
         <div className="container">
             <Head>
                 <title>Cem Kocagöz | Blog</title>
-                <link rel="icon" href="/favicon.ico" />
             </Head>
             <Layout>
                 <h1>Blog page</h1>
