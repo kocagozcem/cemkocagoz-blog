@@ -1,0 +1,55 @@
+@import '../../styles/colors.scss';
+
+.container{
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  border-top: 1px solid $secondary-color;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sourceCodeText{
+  font-weight: 400;
+  color: $sand;
+  font-size: 1.2rem;
+
+  .repoLink{
+    color: $whitesmoke;
+    font-size: 1.2rem;
+    cursor: pointer;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
+
+.link{
+  display: flex;
+  color: $whitesmoke;
+  &:hover{
+    text-decoration: none;
+  }
+
+  .icon{
+    font-size: 2rem;
+  }
+}
+
+
+.socialLinks{
+  display: flex;
+  justify-content: space-between;
+  min-width: 10rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .container{
+    flex-direction: column;
+  }
+  .socialLinks{
+    flex: 1;
+    margin-top: .5rem;
+    
+  }
+}
