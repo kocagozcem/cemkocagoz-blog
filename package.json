@@ -4,14 +4,15 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node sitemap_generator.js && next build",
     "start": "next start",
-    "serve": "next build && next start"
+    "serve": "yarn build && yarn start"
   },
   "dependencies": {
     "classnames": "^2.2.6",
     "next": "9.3.6",
     "next-pwa": "^2.3.3",
+    "nextjs-sitemap-generator": "^1.0.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "sass": "^1.26.5"
