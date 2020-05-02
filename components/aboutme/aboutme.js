@@ -1,5 +1,5 @@
 import styles from './aboutme.module.scss';
-import { aboutme } from '../../assets/aboutme.json';
+import { aboutme } from '../../assets/textvars.json';
 
 function AboutMe({ children }) {
   return(
