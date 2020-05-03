@@ -14,7 +14,7 @@ function Layout({ children }) {
         /> */}
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#c1a57b" />
-        <link rel="apple-touch-icon" href="icons/icon-192x192.png" />
+        <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=UA-146867983-1"
