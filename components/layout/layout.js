@@ -33,7 +33,7 @@ function Layout({ children }) {
             __html: `document.getElementsByTagName("html")[0].setAttribute("lang","en")`,
           }}
         />
-        <meta name="description" content={aboutme} />
+        <meta name="description" content={aboutme.slice(0, 319)} />
       </Head>
       <div className={styles.container}>
         <NavigationMenu />
