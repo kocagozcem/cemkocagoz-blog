@@ -4,8 +4,7 @@
   "theme_color": "#c1a57b",
   "background_color": "#222831",
   "display": "fullscreen",
-  "scope": "/",
-  "start_url": "/",
+  "start_url": "/index",
   "splash_pages": null,
   "icons": [
     {
