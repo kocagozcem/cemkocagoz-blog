@@ -1,6 +1,6 @@
 import styles from "./current-position.module.scss";
 import Head from "next/head";
-import simpleIcons from "simple-icons";
+// import simpleIcons from "simple-icons";
 
 let technologies = [
   {
@@ -30,22 +30,8 @@ let technologies = [
 ];
 
 function technology(icon, title, index) {
-  const stackIcon = simpleIcons.get(icon);
-  return (
-    <div className={styles.technology} key={index}>
-      <div
-        data-icon={stackIcon}
-        style={{
-          fill: `#${stackIcon.hex}`,
-          display: "inline-block",
-          width: "32px",
-          margin: "0 auto",
-        }}
-        dangerouslySetInnerHTML={{ __html: stackIcon.svg }}
-      />
-      <span className={styles.technologyName}>{title}</span>
-    </div>
-  );
+  // const stackIcon = simpleIcons.get(icon);
+  return <div className={styles.technology} key={index}></div>;
 }
 
 function jobInformations() {

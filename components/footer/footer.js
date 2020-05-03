@@ -1,6 +1,6 @@
 import styles from "./footer.module.scss";
 import { projectUrl } from "../../assets/textvars.json";
-import simpleIcons from "simple-icons";
+// import simpleIcons from "simple-icons";
 
 function Footer({ children }) {
   let socialLinks = [
@@ -22,7 +22,7 @@ function Footer({ children }) {
   ];
 
   function socialLink(social, index) {
-    const icon = simpleIcons.get(social.icon);
+    // const icon = simpleIcons.get(social.icon);
     return (
       <a
         key={index}
@@ -33,18 +33,7 @@ function Footer({ children }) {
         className={styles.link}
         href={social.link}
         target="_blank"
-      >
-        <div
-          data-icon={icon}
-          style={{
-            fill: `#fff`,
-            display: "inline-block",
-            width: "26px",
-            margin: "0 auto",
-          }}
-          dangerouslySetInnerHTML={{ __html: icon.svg }}
-        />
-      </a>
+      ></a>
     );
   }
 
