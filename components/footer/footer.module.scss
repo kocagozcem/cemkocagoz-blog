@@ -1,6 +1,6 @@
-@import '../../styles/colors.scss';
+@import "../../styles/colors.scss";
 
-.container{
+.container {
   display: flex;
   flex: 1;
   flex-wrap: wrap;
@@ -9,47 +9,45 @@
   align-items: center;
 }
 
-.sourceCodeText{
+.sourceCodeText {
   font-weight: 400;
   color: $sand;
   font-size: 1.2rem;
 
-  .repoLink{
+  .repoLink {
     color: $whitesmoke;
     font-size: 1.2rem;
     cursor: pointer;
-    &:hover{
+    &:hover {
       text-decoration: none;
     }
   }
 }
 
-.link{
+.link {
   display: flex;
   color: $whitesmoke;
-  &:hover{
+  &:hover {
     text-decoration: none;
   }
 
-  .icon{
+  .icon {
     font-size: 2rem;
   }
 }
 
-
-.socialLinks{
+.socialLinks {
   display: flex;
   justify-content: space-between;
   min-width: 10rem;
 }
 
 @media only screen and (max-width: 600px) {
-  .container{
+  .container {
     flex-direction: column;
   }
-  .socialLinks{
+  .socialLinks {
     flex: 1;
-    margin-top: .5rem;
-    
+    margin-top: 0.5rem;
   }
 }

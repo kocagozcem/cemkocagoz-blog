@@ -1,6 +1,8 @@
-import styles from './layout.module.scss';
-import NavigationMenu from '../menu/menu';
-import Footer from '../footer/footer';
+import styles from "./layout.module.scss";
+import NavigationMenu from "../menu/menu";
+import Footer from "../footer/footer";
+import { aboutme } from "../../assets/textvars.json";
+import Head from "next/head";
 
 function Layout({ children }) {
   return (
@@ -30,15 +32,13 @@ function Layout({ children }) {
         />
         <meta name="description" content={aboutme} />
       </Head>
-    <div className={styles.container}>
-      <NavigationMenu />
-      <div className={styles.content}>
-        {children}
+      <div className={styles.container}>
+        <NavigationMenu />
+        <div className={styles.content}>{children}</div>
+        <Footer />
       </div>
-      <Footer/>
     </div>
-    </div>
-  )
+  );
 }
-  
-export default Layout
+
+export default Layout;

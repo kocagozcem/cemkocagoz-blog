@@ -1,24 +1,24 @@
-@import '../../styles/colors.scss';
+@import "../../styles/colors.scss";
 
-.container{
+.container {
   display: flex;
   flex: 1;
   flex-direction: column;
   padding: 2rem 0;
-  
-  .githubHeader{
+
+  .githubHeader {
     text-align: center;
     margin-bottom: 0;
     color: $sand;
   }
 
-  .context{
+  .context {
     display: flex;
     flex: 1;
     flex-direction: row;
     flex-wrap: wrap;
 
-    .githubContext{
+    .githubContext {
       display: flex;
       flex: 1;
       flex-direction: column;
@@ -26,40 +26,40 @@
       align-self: center;
       color: $whitesmoke;
       min-width: 15em;
-      .githubNameContainer{
+      .githubNameContainer {
         display: flex;
         flex: 1;
         font-size: 1.5rem;
         justify-content: center;
         align-items: center;
-        margin-bottom: .5rem;
-    
-        .githubName{
+        margin-bottom: 0.5rem;
+
+        .githubName {
           text-align: center;
           cursor: pointer;
           font-weight: bold;
         }
       }
-      .row{
+      .row {
         display: flex;
         flex: 1;
-        .col{
+        .col {
           display: flex;
           flex: 1;
           flex-direction: column;
           align-items: space-around;
           justify-content: center;
           cursor: pointer;
-          &:nth-child(2){
+          &:nth-child(2) {
             margin: 0 1rem;
           }
-          .githubAttributeHeader{
+          .githubAttributeHeader {
             text-align: center;
-            margin: .5rem 0 0 0;
+            margin: 0.5rem 0 0 0;
             font-weight: bold;
             font-size: 1.2em;
           }
-          .githubAttribute{
+          .githubAttribute {
             text-align: center;
             font-weight: bold;
             font-size: 1.2em;
@@ -68,26 +68,25 @@
       }
     }
 
-    .logoContainer{
+    .logoContainer {
       display: flex;
       flex: 1;
       justify-content: center;
       align-self: center;
       min-width: 10rem;
-      .githubLogo{
+      .githubLogo {
         font-size: 7rem;
-        color: $sand
+        color: $sand;
       }
     }
   }
 }
 
-
-.link{
+.link {
   display: flex;
   flex-direction: column;
   color: $whitesmoke;
-  &:hover{
+  &:hover {
     text-decoration: none;
   }
 }
