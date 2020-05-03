@@ -1,28 +1,26 @@
 import styles from "./footer.module.scss";
 import { projectUrl } from "../../assets/textvars.json";
-// import simpleIcons from "simple-icons";
 
 function Footer({ children }) {
   let socialLinks = [
     {
       name: "Email",
-      icon: "Mail.Ru",
+      icon: require("simple-icons/icons/HTML5"),
       link: "mailto:kocagozcem@gmail.com",
     },
     {
       name: "LinkedIn",
-      icon: "LinkedIn",
+      icon: require("simple-icons/icons/LinkedIn"),
       link: "https://www.linkedin.com/in/cemkocagoz/",
     },
     {
       name: "Github",
-      icon: "Github",
+      icon: require("simple-icons/icons/Github"),
       link: "https://github.com/kocagozcem",
     },
   ];
 
   function socialLink(social, index) {
-    // const icon = simpleIcons.get(social.icon);
     return (
       <a
         key={index}
@@ -33,7 +31,18 @@ function Footer({ children }) {
         className={styles.link}
         href={social.link}
         target="_blank"
-      ></a>
+      >
+        <div
+          data-icon={social.icon}
+          style={{
+            fill: `#fff`,
+            display: "inline-block",
+            width: "26px",
+            margin: "0 auto",
+          }}
+          dangerouslySetInnerHTML={{ __html: social.icon.svg }}
+        />
+      </a>
     );
   }
 

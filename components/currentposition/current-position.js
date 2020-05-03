@@ -1,37 +1,49 @@
 import styles from "./current-position.module.scss";
 import Head from "next/head";
-// import simpleIcons from "simple-icons";
 
 let technologies = [
   {
     title: "HTML",
-    icon: "HTML5",
+    icon: require("simple-icons/icons/HTML5"),
   },
   {
     title: "CSS",
-    icon: "CSS3",
+    icon: require("simple-icons/icons/CSS3"),
   },
   {
     title: "SASS",
-    icon: "Sass",
+    icon: require("simple-icons/icons/Sass"),
   },
   {
     title: "Javascript",
-    icon: "JavaScript",
+    icon: require("simple-icons/icons/JavaScript"),
   },
   {
     title: "React Native",
-    icon: "React",
+    icon: require("simple-icons/icons/React"),
   },
   {
     title: "Angular",
-    icon: "Angular",
+    icon: require("simple-icons/icons/Angular"),
   },
 ];
 
 function technology(icon, title, index) {
-  // const stackIcon = simpleIcons.get(icon);
-  return <div className={styles.technology} key={index}></div>;
+  return (
+    <div className={styles.technology} key={index}>
+      <div
+        data-icon={icon}
+        style={{
+          fill: `#${icon.hex}`,
+          display: "inline-block",
+          width: "32px",
+          margin: "0 auto",
+        }}
+        dangerouslySetInnerHTML={{ __html: icon.svg }}
+      />
+      <span className={styles.technologyName}>{title}</span>
+    </div>
+  );
 }
 
 function jobInformations() {
