@@ -6,7 +6,7 @@ function Footer({ children }) {
     {
       name: "Email",
       icon: "far fa-envelope fa-fw",
-      link: "kocagozcem@gmail.com"
+      link: "mailto:kocagozcem@gmail.com",
     },
     {
       name: "LinkedIn",
