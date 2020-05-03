@@ -29,20 +29,18 @@
   min-width: 12.5em;
   .company {
     margin: 0;
-    line-height: 1rem;
     cursor: pointer;
     font-weight: bold;
     font-size: 1.4rem;
   }
   .jobTitle {
     margin: 1rem 0 0.3rem 0;
-    line-height: 1rem;
     font-size: 1.2rem;
     font-weight: 400;
+    margin-top: 0;
   }
   .jobDate {
     margin: 0;
-    line-height: 1rem;
   }
 }
 
