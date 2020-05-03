@@ -1,4 +1,6 @@
 import { useRouter } from "next/router";
+import Layout from "../../components/layout/layout";
+import styles from "./slug.module.scss";
 
 const Post = () => {
   const router = useRouter();
