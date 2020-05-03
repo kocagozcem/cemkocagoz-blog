@@ -1,7 +1,6 @@
 import styles from "./github.module.scss";
 import { useEffect, useState } from "react";
-import styles from './github.module.scss'
-import { useEffect, useState } from 'react';
+import TriangleSpinner from "../trianglespinner/triangle-spinner";
 
 var classNames = require("classnames");
 
@@ -101,14 +100,13 @@ function Github({ children }) {
     );
   } else {
     <div className={styles.container}>
-      <h5>loading</h5>
-    </div>
+      <TriangleSpinner color="#212121" />
     </div>;
   }
 
   return (
     <div className={styles.container}>
-      <h5>error</h5>
+      <TriangleSpinner color="#c1a57b" size={50} />
     </div>
   );
 }
