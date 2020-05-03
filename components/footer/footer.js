@@ -5,17 +5,17 @@ function Footer({ children }) {
   let socialLinks = [
     {
       name: "Email",
-      icon: require("simple-icons/icons/HTML5"),
+      icon: require("simple-icons/icons/mail-dot-ru"),
       link: "mailto:kocagozcem@gmail.com",
     },
     {
       name: "LinkedIn",
-      icon: require("simple-icons/icons/LinkedIn"),
+      icon: require("simple-icons/icons/linkedin"),
       link: "https://www.linkedin.com/in/cemkocagoz/",
     },
     {
       name: "Github",
-      icon: require("simple-icons/icons/Github"),
+      icon: require("simple-icons/icons/github"),
       link: "https://github.com/kocagozcem",
     },
   ];

@@ -1,11 +1,11 @@
 import styles from "./current-position.module.scss";
 
-const html = require("simple-icons/icons/HTML5");
-const css = require("simple-icons/icons/CSS3");
-const sass = require("simple-icons/icons/Sass");
-const javascript = require("simple-icons/icons/JavaScript");
-const react = require("simple-icons/icons/React");
-const angular = require("simple-icons/icons/Angular");
+const html = require("simple-icons/icons/html5");
+const css = require("simple-icons/icons/css3");
+const sass = require("simple-icons/icons/sass");
+const javascript = require("simple-icons/icons/javascript");
+const react = require("simple-icons/icons/react");
+const angular = require("simple-icons/icons/angular");
 
 let technologies = [
   {
