@@ -58,11 +58,11 @@ export default function Blog() {
 
   if (!isLoading) {
     return (
-      <div className={styles.container}>
+      <Layout>
         <Head>
           <title>Blog | Cem Kocagöz Frontend Developer Personal Website</title>
         </Head>
-        <Layout>
+        <div className={styles.container}>
           {posts.map((post, index) => (
             <BlogPost
               key={post.id}
@@ -70,8 +70,8 @@ export default function Blog() {
               blogpostClicked={() => setSelectedState2(post.id)}
             />
           ))}
-        </Layout>
-      </div>
+        </div>
+      </Layout>
     );
   }
   return (

@@ -47,22 +47,24 @@ function Footer({ children }) {
   }
 
   return (
-    <footer className={styles.container}>
-      <p className={styles.sourceCodeText}>
-        Projenin açık kaynak kodlarına
-        <a
-          rel="noopener"
-          alt="cem kocagoz blog github repo"
-          className={styles.repoLink}
-          href={projectUrl}
-          target="_blank"
-        >
-          {" buradan "}
-        </a>
-        ulaşabilirsiniz
-      </p>
-      <div className={styles.socialLinks}>
-        {socialLinks.map((social, index) => socialLink(social, index))}
+    <footer>
+      <div className={styles.container}>
+        <p className={styles.sourceCodeText}>
+          Projenin açık kaynak kodlarına
+          <a
+            rel="noopener"
+            alt="cem kocagoz blog github repo"
+            className={styles.repoLink}
+            href={projectUrl}
+            target="_blank"
+          >
+            {" buradan "}
+          </a>
+          ulaşabilirsiniz
+        </p>
+        <div className={styles.socialLinks}>
+          {socialLinks.map((social, index) => socialLink(social, index))}
+        </div>
       </div>
     </footer>
   );
