@@ -7,12 +7,14 @@
   border-top: 1px solid $secondary-color;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem 0 0 0;
 }
 
 .sourceCodeText {
   font-weight: 400;
   color: $sand;
   font-size: 1.2rem;
+  text-align: center;
 
   .repoLink {
     color: $whitesmoke;
@@ -39,6 +41,7 @@
 .socialLinks {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   min-width: 10rem;
 }
 

@@ -1,73 +1,84 @@
-import styles from './current-position.module.scss';
-import Head from 'next/head';
+import styles from "./current-position.module.scss";
+import Head from "next/head";
+import simpleIcons from "simple-icons";
 
 let technologies = [
   {
     title: "HTML",
-    icon: "fab fa-html5"
+    icon: "HTML5",
   },
   {
     title: "CSS",
-    icon: "fab fa-css3",
+    icon: "CSS3",
   },
   {
     title: "SASS",
-    icon: "fab fa-sass",
+    icon: "Sass",
   },
   {
     title: "Javascript",
-    icon: "fab fa-js-square",
+    icon: "JavaScript",
   },
   {
     title: "React Native",
-    icon: "fab fa-react",
+    icon: "React",
   },
   {
     title: "Angular",
-    icon: "fab fa-angular",
+    icon: "Angular",
   },
 ];
 
-function technology(icon, title, index){
-  return(
+function technology(icon, title, index) {
+  const stackIcon = simpleIcons.get(icon);
+  return (
     <div className={styles.technology} key={index}>
-      <span className={styles.technologyIcon}>
-        <i className={icon}></i>
-      </span>
+      <div
+        data-icon={stackIcon}
+        style={{
+          fill: `#${stackIcon.hex}`,
+          display: "inline-block",
+          width: "32px",
+          margin: "0 auto",
+        }}
+        dangerouslySetInnerHTML={{ __html: stackIcon.svg }}
+      />
       <span className={styles.technologyName}>{title}</span>
     </div>
-  )
+  );
 }
 
-function jobInformations(){
-  return(
+function jobInformations() {
+  return (
     <div className={styles.job}>
       <span className={styles.company}>Eight Information Tech.</span>
       <span className={styles.jobTitle}>Frontend Developer (Remote)</span>
       <span className={styles.jobDate}>Aralık 2018 - Şu Anda</span>
     </div>
-  )
+  );
 }
 
 function CurrentPosition({ children }) {
   return (
     <>
-    <div className={styles.container}>
-      <h3 className={styles.currentJobHeader}>Current Position</h3>
-      <div className={styles.content}>
-        {jobInformations()}
-        <div className={styles.companyTechnologies}>
-          <span className={styles.technologiesHeader}>
-            Using Technologies
-          </span>
-          <div className={styles.technologies}>
-            {technologies.map((tech, index) => technology(tech.icon, tech.title, index))}
+      <div className={styles.container}>
+        <h3 className={styles.currentJobHeader}>Current Position</h3>
+        <div className={styles.content}>
+          {jobInformations()}
+          <div className={styles.companyTechnologies}>
+            <span className={styles.technologiesHeader}>
+              Using Technologies
+            </span>
+            <div className={styles.technologies}>
+              {technologies.map((tech, index) =>
+                technology(tech.icon, tech.title, index)
+              )}
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </>
-  )
+  );
 }
-  
-export default CurrentPosition
+
+export default CurrentPosition;

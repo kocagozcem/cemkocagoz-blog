@@ -4,6 +4,8 @@ import TriangleSpinner from "../trianglespinner/triangle-spinner";
 
 var classNames = require("classnames");
 
+const icon = require("simple-icons/icons/github");
+
 var githubAttributes = [
   {
     title: "Repos",
@@ -65,9 +67,16 @@ function Github({ children }) {
         <h3 className={styles.githubHeader}>Github</h3>
         <div className={styles.context}>
           <div className={styles.logoContainer}>
-            <span className={styles.githubLogo}>
-              <i className="fab fa-github"></i>
-            </span>
+            <div
+              data-icon={icon}
+              style={{
+                fill: `#c1a57b`,
+                display: "inline-block",
+                width: "112px",
+                margin: "0 auto",
+              }}
+              dangerouslySetInnerHTML={{ __html: icon.svg }}
+            />
           </div>
           <div className={styles.githubContext}>
             <div className={styles.githubNameContainer}>

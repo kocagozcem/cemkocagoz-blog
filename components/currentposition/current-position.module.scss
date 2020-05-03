@@ -1,25 +1,25 @@
-@import '../../styles/colors.scss';
+@import "../../styles/colors.scss";
 
-.container{
+.container {
   display: flex;
   flex: 1;
   padding: 1rem 0;
   flex-direction: column;
 }
 
-.content{
+.content {
   display: flex;
   flex: 1;
   flex-wrap: wrap;
   padding: 1em 0;
 }
 
-.currentJobHeader{
+.currentJobHeader {
   text-align: center;
   color: $sand;
 }
 
-.job{
+.job {
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -27,31 +27,31 @@
   justify-content: center;
   color: $whitesmoke;
   min-width: 12.5em;
-  .company{
+  .company {
     margin: 0;
     line-height: 1rem;
     cursor: pointer;
     font-weight: bold;
     font-size: 1.4rem;
   }
-  .jobTitle{
-    margin: 1rem 0 .3rem 0;
+  .jobTitle {
+    margin: 1rem 0 0.3rem 0;
     line-height: 1rem;
     font-size: 1.2rem;
     font-weight: 400;
   }
-  .jobDate{
+  .jobDate {
     margin: 0;
     line-height: 1rem;
   }
 }
 
-.companyTechnologies{
+.companyTechnologies {
   display: flex;
   flex: 1;
   flex-direction: column;
   min-width: 12.5em;
-  .technologiesHeader{
+  .technologiesHeader {
     font-weight: 600;
     color: $whitesmoke;
     text-align: center;
@@ -59,14 +59,14 @@
   }
 }
 
-.technologies{
+.technologies {
   display: flex;
   flex: 1;
   flex-wrap: wrap;
   padding: 1em 0;
 }
 
-.technology{
+.technology {
   display: flex;
   flex: 1 0 26%; /* explanation below */
   justify-content: space-between;
@@ -74,13 +74,12 @@
   flex-direction: column;
   min-width: 5rem;
   color: $whitesmoke;
+  &:nth-child(1n + 4) {
+    margin-top: 1rem;
+  }
 }
 
-.technologyIcon{
-  font-size: 2em;
-}
-
-.technologyName{
+.technologyName {
   margin-top: 0;
   font-weight: bold;
 }

@@ -8,10 +8,10 @@ function Layout({ children }) {
   return (
     <div>
       <Head>
-        <link
+        {/* <link
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
           rel="stylesheet"
-        />
+        /> */}
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#c1a57b" />
         <link rel="apple-touch-icon" href="icons/icon-192x192.png" />
