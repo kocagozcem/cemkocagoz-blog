@@ -4,8 +4,8 @@
   "theme_color": "#c1a57b",
   "background_color": "#222831",
   "display": "fullscreen",
-  "Scope": "/",
-  "start_url": "https://cemkocagoz-blog-git-development.cemkocagoz.now.sh",
+  "scope": "/",
+  "start_url": "/",
   "splash_pages": null,
   "icons": [
     {
