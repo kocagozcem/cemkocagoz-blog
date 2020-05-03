@@ -50,7 +50,7 @@ export default function Blog() {
 
   const getPosts = async () => {
     let response = await fetch(
-      "http://jsonplaceholder.typicode.com/posts?_page=" + 1 + "_limit=" + 10
+      "https://jsonplaceholder.typicode.com/posts?_page=" + 1 + "_limit=" + 10
     );
     let posts = await response.json();
     return posts;
