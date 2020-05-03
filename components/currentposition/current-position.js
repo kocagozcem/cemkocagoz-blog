@@ -1,31 +1,38 @@
 import styles from "./current-position.module.scss";
 import {} from "simple-icons/icons/angular";
 
+const html = require("simple-icons/icons/HTML5");
+const css = require("simple-icons/icons/CSS3");
+const sass = require("simple-icons/icons/Sass");
+const javascript = require("simple-icons/icons/JavaScript");
+const react = require("simple-icons/icons/React");
+const angular = require("simple-icons/icons/Angular");
+
 let technologies = [
   {
     title: "HTML",
-    icon: require("simple-icons/icons/HTML5"),
+    icon: html,
   },
   {
     title: "CSS",
-    icon: require("simple-icons/icons/CSS3"),
+    icon: css,
   },
   {
     title: "SASS",
-    icon: require("simple-icons/icons/Sass"),
+    icon: sass,
   },
   {
     title: "Javascript",
-    icon: require("simple-icons/icons/JavaScript"),
+    icon: javascript,
   },
   {
     title: "React Native",
-    icon: require("simple-icons/icons/React"),
+    icon: react,
   },
-  // {
-  //   title: "Angular",
-  //   icon: require("simple-icons/icons/Angular"),
-  // },
+  {
+    title: "Angular",
+    icon: angular,
+  },
 ];
 
 function technology(icon, title, index) {
