@@ -12,6 +12,7 @@ function Layout({ children }) {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
           rel="stylesheet"
         />
+        <link rel="manifest" href="/manifest.json" />
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=UA-146867983-1"
