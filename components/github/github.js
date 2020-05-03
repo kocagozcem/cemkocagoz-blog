@@ -109,7 +109,7 @@ function Github({ children }) {
     );
   } else {
     <div className={styles.container}>
-      <TriangleSpinner color="#212121" />
+      <TriangleSpinner color="#212121" size={50} />
     </div>;
   }
 
