@@ -5,8 +5,9 @@ import Link from "next/link";
 var classNames = require("classnames");
 
 const BlogPost = ({ post, blogpostClicked, style }) => {
+  let path = "blog/" + post.title.split(" ").join("-");
   return (
-    <Link href={"blog/" + post.title.split(" ").join("-")}>
+    <Link href={{ pathname: path, query: { id: post.id } }}>
       <div style={style} className={styles.container}>
         <h3 className={styles.postHeader}>{post.title}</h3>
         <p className={`${styles.postContext} ${styles.unselectable}`}>
