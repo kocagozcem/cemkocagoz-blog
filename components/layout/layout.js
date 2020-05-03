@@ -13,6 +13,7 @@ function Layout({ children }) {
           rel="stylesheet"
         />
         <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#c1a57b" />
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=UA-146867983-1"
