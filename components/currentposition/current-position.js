@@ -1,5 +1,5 @@
 import styles from "./current-position.module.scss";
-import Head from "next/head";
+import {} from "simple-icons/icons/angular";
 
 let technologies = [
   {
@@ -22,10 +22,10 @@ let technologies = [
     title: "React Native",
     icon: require("simple-icons/icons/React"),
   },
-  {
-    title: "Angular",
-    icon: require("simple-icons/icons/Angular"),
-  },
+  // {
+  //   title: "Angular",
+  //   icon: require("simple-icons/icons/Angular"),
+  // },
 ];
 
 function technology(icon, title, index) {
