@@ -1,5 +1,4 @@
 import styles from "./current-position.module.scss";
-import {} from "simple-icons/icons/angular";
 
 const html = require("simple-icons/icons/HTML5");
 const css = require("simple-icons/icons/CSS3");
