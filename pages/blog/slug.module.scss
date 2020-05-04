@@ -16,7 +16,13 @@
   }
 
   .commentsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1rem;
     .comment {
+      display: flex;
+      align-self: stretch;
       .commentAuthor {
       }
     }

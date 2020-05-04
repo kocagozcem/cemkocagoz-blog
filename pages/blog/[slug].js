@@ -3,23 +3,31 @@ import Layout from "../../components/layout/layout";
 import styles from "./slug.module.scss";
 import TriangleSpinner from "../../components/trianglespinner/triangle-spinner";
 import { useState, useEffect } from "react";
+import Comment from "../../components/comment/comment";
 
 const Post = ({ query }) => {
   const router = useRouter();
   const { slug } = router.query;
 
   const [post, setPost] = useState({});
-  const [isLoading, setLoading] = useState(true);
+  const [isPostLoading, setPostLoading] = useState(true);
+
+  const [comments, setComments] = useState([]);
+  const [isCommentsLoading, setCommentsLoading] = useState(true);
 
   useEffect(() => {
-    if (Object.keys(post).length == 0) {
+    if (Object.keys(post).length == 0 && comments.length == 0) {
       getPost().then((blogPost) => {
-        console.log(blogPost);
         setPost(blogPost);
-        setLoading(false);
+        setPostLoading(false);
+      });
+
+      getComments().then((comments) => {
+        setComments(comments);
+        setCommentsLoading(false);
       });
     }
-  }, [isLoading, post]);
+  }, [isPostLoading, post, isCommentsLoading, comments]);
 
   const getPost = async () => {
     let response = await fetch(
@@ -29,7 +37,15 @@ const Post = ({ query }) => {
     return posts;
   };
 
-  if (isLoading) {
+  const getComments = async () => {
+    let response = await fetch(
+      "https://jsonplaceholder.typicode.com/comments?postId=1" + query["id"]
+    );
+    let comments = await response.json();
+    return comments;
+  };
+
+  if (isPostLoading) {
     return (
       <Layout>
         <div className={styles.spinnerContainer}>
@@ -43,6 +59,19 @@ const Post = ({ query }) => {
         <div className={styles.container}>
           <h2 className={styles.postHeader}>{post.title}</h2>
           <p className={styles.postContext}>{post.body}</p>
+          <div className={styles.commentsSection}>
+            {!isCommentsLoading ? (
+              comments.length > 0 ? (
+                comments.map((comment) => (
+                  <Comment key={comment.id} comment={comment} />
+                ))
+              ) : (
+                <p>No comment</p>
+              )
+            ) : (
+              <TriangleSpinner size={50} />
+            )}
+          </div>
         </div>
       </Layout>
     );
