@@ -1,0 +1,28 @@
+@import "../../styles/colors.scss";
+
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  color: $whitesmoke;
+  padding: 1.3rem 0;
+
+  .commentHeader {
+    display: flex;
+    align-self: stretch;
+    justify-content: space-between;
+    align-items: center;
+    .commentHeaderText {
+      font-weight: 500;
+      font-size: 1.1rem;
+    }
+
+    .commentDate {
+      font-size: 0.8rem;
+      font-weight: 900;
+    }
+  }
+
+  .commentBody {
+  }
+}
