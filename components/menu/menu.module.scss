@@ -1,28 +1,27 @@
-@import '../../styles/colors.scss';
-@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import "../../styles/colors.scss";
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
 
 $logoSizeMultiplier: 2rem;
 
-.container{
+.container {
   display: flex;
-  flex: 1;
   flex-direction: column;
   justify-content: center;
   padding-top: 1.3rem;
-};
+}
 
-.logoContainer{
+.logoContainer {
   display: flex;
   flex: 1;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  .logo{
+  .logo {
     display: flex;
     flex-direction: column;
-    font-family: 'Staatliches', cursive;
+    font-family: "Staatliches", cursive;
     cursor: default;
-    .logoName{
+    .logoName {
       display: flex;
       flex-direction: column;
       float: left;
@@ -32,10 +31,10 @@ $logoSizeMultiplier: 2rem;
       font-weight: bold;
       color: $whitesmoke;
     }
-    .logoSurname{
+    .logoSurname {
       display: flex;
       margin: 0;
-      line-height: 1em;
+      line-height: 1.3em;
       font-size: $logoSizeMultiplier;
       font-weight: bold;
       color: $whitesmoke;
@@ -43,7 +42,7 @@ $logoSizeMultiplier: 2rem;
   }
 }
 
-.ul{
+.ul {
   display: flex;
   flex: 1;
   padding: 0;
@@ -51,12 +50,12 @@ $logoSizeMultiplier: 2rem;
   align-items: center;
 }
 
-.menuItem{
+.menuItem {
   display: flex;
   color: $whitesmoke;
   font-weight: 600;
   cursor: pointer;
-  &:hover{
+  &:hover {
     text-decoration: underline;
   }
 }

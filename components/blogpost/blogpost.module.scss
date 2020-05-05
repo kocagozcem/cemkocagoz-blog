@@ -1,0 +1,33 @@
+@import "../../styles/colors.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  transition: height 0.6s, opacity 0.4s;
+}
+
+.clickedContainer {
+  display: flex;
+  flex-direction: column;
+  transition: height 0.6s, opacity 0.4s;
+}
+
+.postHeader {
+  color: $sand;
+}
+
+.postContext {
+  display: flex;
+  color: $whitesmoke;
+}
+
+.hiddenPostContext {
+  display: none;
+}
+
+.unselectable {
+  user-select: none;
+}

@@ -28,3 +28,9 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
+.vscode/*
+
+
+public/workbox-b90066a8.js
+public/service-worker.js.map
+public/service-worker.js

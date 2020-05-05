@@ -5353,6 +5353,11 @@ shallow-clone@^3.0.0:
   dependencies:
     kind-of "^6.0.2"
 
+simple-icons@^2.11.0:
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/simple-icons/-/simple-icons-2.11.0.tgz#2a64e655b1252b75c661497d4bb0e32b96e71ab2"
+  integrity sha512-k3+Kv0YhHCxAuoHlhOqx/CITDwV2g03cv05TldQbAzPiEBezKxyQ2MNh0TdBf0lUSXcLqvS3T1wGFKK3UWEJ0w==
+
 simple-swizzle@^0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/simple-swizzle/-/simple-swizzle-0.2.2.tgz#a4da6b635ffcccca33f70d17cb92592de95e557a"

@@ -1,47 +1,73 @@
-import styles from './footer.module.scss';
-import { projectUrl } from '../../assets/textvars.json';
+import styles from "./footer.module.scss";
+import { projectUrl } from "../../assets/textvars.json";
 
 function Footer({ children }) {
   let socialLinks = [
     {
       name: "Email",
-      icon: "far fa-envelope fa-fw",
-      link: "kocagozcem@gmail.com"
+      icon: require("simple-icons/icons/mail-dot-ru"),
+      link: "mailto:kocagozcem@gmail.com",
     },
     {
       name: "LinkedIn",
-      icon: "fab fa-linkedin fa-fw",
-      link: "https://www.linkedin.com/in/cemkocagoz/"
+      icon: require("simple-icons/icons/linkedin"),
+      link: "https://www.linkedin.com/in/cemkocagoz/",
     },
     {
       name: "Github",
-      icon: "fab fa-github fa-fw",
-      link: "https://github.com/kocagozcem"
-    }
+      icon: require("simple-icons/icons/github"),
+      link: "https://github.com/kocagozcem",
+    },
   ];
 
-  function socialLink(social, index){
-    return(
-      <a key={index} rel="noopener" alt={social.name +" profile"} title={social.name +" profile"} name={social.name +" profile"} className={styles.link} href={social.link} target="_blank">
-        <span className={styles.icon}>
-          <i className={social.icon} />
-        </span>
+  function socialLink(social, index) {
+    return (
+      <a
+        key={index}
+        rel="noopener"
+        alt={social.name + " profile"}
+        title={social.name + " profile"}
+        name={social.name + " profile"}
+        className={styles.link}
+        href={social.link}
+        target="_blank"
+      >
+        <div
+          data-icon={social.icon}
+          style={{
+            fill: `#fff`,
+            display: "inline-block",
+            width: "26px",
+            margin: "0 auto",
+          }}
+          dangerouslySetInnerHTML={{ __html: social.icon.svg }}
+        />
       </a>
-    )
+    );
   }
 
   return (
-    <footer className={styles.container}>
-      <p className={styles.sourceCodeText}>
-        Projenin açık kaynak kodlarına 
-        <a rel="noopener" alt="cem kocagoz blog github repo" className={styles.repoLink} href={projectUrl} target="_blank">{" buradan "}</a>
-        ulaşabilirsiniz
-      </p>
-      <div className={styles.socialLinks}>
-        {socialLinks.map((social, index) => socialLink(social, index))}
+    <footer>
+      <div className={styles.container}>
+        <p className={styles.sourceCodeText}>
+          Projenin açık kaynak kodlarına
+          <a
+            rel="noopener"
+            alt="cem kocagoz blog github repo"
+            className={styles.repoLink}
+            href={projectUrl}
+            target="_blank"
+          >
+            {" buradan "}
+          </a>
+          ulaşabilirsiniz
+        </p>
+        <div className={styles.socialLinks}>
+          {socialLinks.map((social, index) => socialLink(social, index))}
+        </div>
       </div>
     </footer>
-  )
+  );
 }
-  
-export default Footer
+
+export default Footer;

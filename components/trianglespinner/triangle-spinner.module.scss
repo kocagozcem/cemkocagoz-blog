@@ -1,0 +1,15 @@
+.spinnerContent {
+  display: flex;
+  justify-content: center;
+}
+
+.polygon {
+  stroke-dasharray: 50;
+  animation: dashoffset 1.5s linear infinite;
+}
+
+@keyframes dashoffset {
+  to {
+    stroke-dashoffset: 100;
+  }
+}

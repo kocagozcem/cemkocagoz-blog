@@ -1,12 +1,11 @@
-const withPWA = require('next-pwa')
- 
+const withPWA = require("next-pwa");
+
 module.exports = withPWA({
-    pwa: {
-        dest: 'public',
-        disable: false,
-        register: true,
-        scope: '/app',
-        sw: 'service-worker.js',
-    },
-    
+  pwa: {
+    dest: "public",
+  },
+  env: {
+    lang: "en",
+    analyticId: "UA-146867983-1",
+  },
 });
