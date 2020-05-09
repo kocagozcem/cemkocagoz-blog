@@ -6,21 +6,26 @@
   flex-direction: column;
   color: $whitesmoke;
   padding: 1.3rem 0;
+  border-bottom: 1px solid #2d4257;
 
   .commentHeader {
     display: flex;
     align-self: stretch;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 0.5rem;
+
     .commentHeaderText {
       font-weight: 500;
       font-size: 1.1rem;
     }
+  }
 
-    .commentDate {
-      font-size: 0.8rem;
-      font-weight: 900;
-    }
+  .commentDate {
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 0.3rem;
   }
 
   .commentBody {

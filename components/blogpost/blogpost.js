@@ -16,6 +16,7 @@ const BlogPost = ({ post, blogpostClicked, style }) => {
         <p className={styles.hiddenPostContext}>
           {post.body.split(" ").splice(25).join(" ")}
         </p>
+        <span className={styles.postDate}>17:34 18.06.2019</span>
       </div>
     </Link>
   );

@@ -8,10 +8,6 @@ function Layout({ children }) {
   return (
     <div className={styles.context}>
       <Head>
-        {/* <link
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-          rel="stylesheet"
-        /> */}
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#c1a57b" />
         <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
@@ -30,7 +26,7 @@ function Layout({ children }) {
         />
         <script
           dangerouslySetInnerHTML={{
-            __html: `document.getElementsByTagName("html")[0].setAttribute("lang","en")`,
+            __html: `document.getElementsByTagName("html")[0].setAttribute("lang","tr")`,
           }}
         />
         <meta name="description" content={aboutme.slice(0, 319)} />
