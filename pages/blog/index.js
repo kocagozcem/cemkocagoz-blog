@@ -28,7 +28,7 @@ export default function Blog() {
     return posts;
   };
 
-  if (!isLoading) {
+  if (!isLoading && posts.length > 0) {
     return (
       <Layout>
         <Head>
@@ -45,9 +45,21 @@ export default function Blog() {
         </div>
       </Layout>
     );
+  } else if (!isLoading) {
+    return (
+      <Layout>
+        <Head>
+          <title>Blog | Cem Kocagöz Frontend Developer Personal Website</title>
+        </Head>
+        <div className={styles.container}>No any post created yet</div>
+      </Layout>
+    );
   }
   return (
     <Layout>
+      <Head>
+        <title>Blog | Cem Kocagöz Frontend Developer Personal Website</title>
+      </Head>
       <div className={styles.loadingContainer}>
         <TriangleSpinner size={150} />
       </div>
