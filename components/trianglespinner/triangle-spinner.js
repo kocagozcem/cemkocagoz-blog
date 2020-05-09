@@ -1,6 +1,6 @@
 import styles from "./triangle-spinner.module.scss";
 
-function TriangleSpinner({ color = "#c1a57b", size = 50 }) {
+function TriangleSpinner({ color = "coral", size = 50 }) {
   return (
     <div className={styles.spinnerContent}>
       <svg width={size + "px"} height={size + "px"} viewBox="-4 -1 38 28">

@@ -70,7 +70,7 @@ function Github({ children }) {
             <div
               data-icon={icon}
               style={{
-                fill: `#c1a57b`,
+                fill: `coral`,
                 display: "inline-block",
                 width: "112px",
                 margin: "0 auto",
