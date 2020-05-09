@@ -4,10 +4,15 @@
   display: flex;
   flex: 1;
   flex-direction: column;
+  margin-top: 2rem;
+  background-color: #223242;
+  padding: 2rem;
+  border-radius: 1rem;
 
   .postHeader {
     font-size: 1.6rem;
     color: $sand;
+    margin-bottom: 0.5rem;
   }
 
   .postContext {
@@ -20,10 +25,27 @@
     flex-direction: column;
     align-items: stretch;
     padding: 1rem;
+    margin-top: 5rem;
     .comment {
       display: flex;
       align-self: stretch;
       .commentAuthor {
+      }
+    }
+
+    .collapsedComments {
+      display: flex;
+      align-self: stretch;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      border-radius: 1rem;
+      border: 1px solid $sand;
+      cursor: pointer;
+
+      .showCommentsText {
+        font-weight: bold;
+        color: $sand;
       }
     }
   }

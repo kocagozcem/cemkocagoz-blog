@@ -12,6 +12,7 @@ const Post = ({ query }) => {
   const [post, setPost] = useState({});
   const [isPostLoading, setPostLoading] = useState(true);
 
+  const [showComments, setShowComments] = useState(false);
   const [comments, setComments] = useState([]);
   const [isCommentsLoading, setCommentsLoading] = useState(true);
 
@@ -45,6 +46,49 @@ const Post = ({ query }) => {
     return comments;
   };
 
+  const showCommentsContainer = () => {
+    if (showComments) {
+      return (
+        <div className={styles.commentsSection}>
+          {!isCommentsLoading ? (
+            comments.length > 0 ? (
+              comments.map((comment) => (
+                <Comment key={comment.id} comment={comment} />
+              ))
+            ) : (
+              <p className={styles.showCommentsText}>No comment</p>
+            )
+          ) : (
+            <TriangleSpinner size={50} />
+          )}
+        </div>
+      );
+    } else {
+      return (
+        <div className={styles.commentsSection}>
+          <div
+            className={styles.collapsedComments}
+            onClick={() => handleShowCommentsClick()}
+          >
+            {comments.length > 0 ? (
+              <span className={styles.showCommentsText}>
+                Show Comments({comments.length})
+              </span>
+            ) : (
+              <span className={styles.showCommentsText}>Send first commit</span>
+            )}
+          </div>
+        </div>
+      );
+    }
+  };
+
+  const handleShowCommentsClick = () => {
+    if (comments.length > 0) {
+      setShowComments(true);
+    }
+  };
+
   if (isPostLoading) {
     return (
       <Layout>
@@ -59,19 +103,7 @@ const Post = ({ query }) => {
         <div className={styles.container}>
           <h2 className={styles.postHeader}>{post.title}</h2>
           <p className={styles.postContext}>{post.body}</p>
-          <div className={styles.commentsSection}>
-            {!isCommentsLoading ? (
-              comments.length > 0 ? (
-                comments.map((comment) => (
-                  <Comment key={comment.id} comment={comment} />
-                ))
-              ) : (
-                <p>No comment</p>
-              )
-            ) : (
-              <TriangleSpinner size={50} />
-            )}
-          </div>
+          {showCommentsContainer()}
         </div>
       </Layout>
     );
