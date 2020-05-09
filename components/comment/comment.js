@@ -5,9 +5,9 @@ function Comment({ comment = {} }) {
     <div className={styles.container}>
       <div className={styles.commentHeader}>
         <span className={styles.commentHeaderText}>{"  " + comment.name}</span>
-        <span className={styles.commentDate}>16:37 04.05.2020</span>
       </div>
       <p className={styles.commentBody}>{comment.body}</p>
+      <span className={styles.commentDate}>16:37 04.05.2020</span>
     </div>
   );
 }
