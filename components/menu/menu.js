@@ -14,7 +14,7 @@ function NavigationMenu({ children }) {
           </h1>
         </div>
       </div>
-      <nav>
+      {/* <nav>
         <ul className={styles.ul}>
           <Link href="/">
             <li className={styles.menuItem}>Anasayfa</li>
@@ -23,7 +23,7 @@ function NavigationMenu({ children }) {
             <li className={styles.menuItem}>TIL Blog</li>
           </Link>
         </ul>
-      </nav>
+      </nav> */}
     </div>
   );
 }
